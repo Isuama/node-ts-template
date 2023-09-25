@@ -11,9 +11,7 @@ if (process.env.NODE_ENV === "production") {
   dotenv.config(); // Load .env by default for development
 }
 
-// Create an instance of Express
-//const app = express();
-const port = process.env.PORT; // You can change this to any port you like
+const port = process.env.PORT;
 
 // Use body-parser middleware to parse request bodies
 app.use(bodyParser.json());
