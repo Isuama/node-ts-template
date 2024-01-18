@@ -1,3 +1,20 @@
+interface Distance {
+    text: string;
+    value: number;
+}
+
+interface Leg {
+    distance: Distance;
+}
+
+interface Route {
+    legs: Leg[];
+}
+
+interface RoutesResponse {
+    routes: Route[];
+}
+
 {
   "routes" : [
     {
